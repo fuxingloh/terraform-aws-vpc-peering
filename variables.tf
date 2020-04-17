@@ -1,21 +1,48 @@
-variable "regions" {
-  type = list(object({
-    region = string,
-    vpc_id = string,
-    route_table_id = string,
-    cidr_block = string,
-  }))
-  default = []
-  description = "A list of all region and vpc_id to peer together."
-}
-
 variable "tags" {
   type = map(string)
   default = {}
-  description = "Tags to attach to all peering resources."
+  description = "Tags to attach to all VPC peering resources. (Optional)"
 }
 
-locals {
-  // Minimally need 2 region for this module.
-  count = length(var.regions) > 1 ? length(var.regions) : 0
+variable "us-east-1" {
+  type = object({
+    vpc_id = string,
+    route_table_id = string,
+    cidr_block = string
+  })
+  default = null
+  description = "US-EAST-1 Region for peering. (Optional)"
 }
+
+variable "us-east-2" {
+  type = object({
+    vpc_id = string,
+    route_table_id = string,
+    cidr_block = string
+  })
+  default = null
+  description = "US-EAST-2 Region for peering. (Optional)"
+}
+
+variable "us-west-1" {
+  type = object({
+    vpc_id = string,
+    route_table_id = string,
+    cidr_block = string
+  })
+  default = null
+  description = "US-WEST-1 Region for peering. (Optional)"
+}
+
+variable "us-west-2" {
+  type = object({
+    vpc_id = string,
+    route_table_id = string,
+    cidr_block = string
+  })
+  default = null
+  description = "US-WEST-2 Region for peering. (Optional)"
+}
+
+
+
