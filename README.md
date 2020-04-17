@@ -4,7 +4,8 @@ Terraform module which creates [VPC Peering](https://docs.aws.amazon.com/vpc/lat
 This module is written such that it will only peering with regions that is included in the module list. 
 
 #### Why is this created?
-For a 18 regions peered vpc network, you need to create 612 resources and manually map them yourself.   
+For an 18 regions peered vpc network, you need to create 612 resources and manually map them yourself.
+This module does it for you.   
 
 #### These types of resources will be created
 * [VPC Peering Connection](https://www.terraform.io/docs/providers/aws/r/vpc_peering_connection.html)
@@ -39,8 +40,7 @@ For a 18 regions peered vpc network, you need to create 612 resources and manual
 Terraform version `0.12` only.
 
 ## Usage example
-You need to provide all 18 regions even if you don't use them. 
-This is required for resource tracking.
+**You need to provide all 18 regions even if you don't use them. This is required for resource tracking.**
 
 ```hcl-terraform
 module "peering" {
@@ -113,3 +113,6 @@ module "peering" {
 | me-south-1 | ME-SOUTH-1 Region for peering. (Optional) |
 | sa-east-1 | SA-EAST-1 Region for peering. (Optional) |
 
+## Outputs
+
+None
