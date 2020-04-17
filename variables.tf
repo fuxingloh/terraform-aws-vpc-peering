@@ -51,7 +51,7 @@ variable "ap-east-1" {
     cidr_block = string
   })
   default = null
-  description = "US-WEST-2 Region for peering. (Optional)"
+  description = "AP-EAST-1 Region for peering. (Optional)"
 }
 
 variable "ap-south-1" {
@@ -61,7 +61,7 @@ variable "ap-south-1" {
     cidr_block = string
   })
   default = null
-  description = "US-WEST-2 Region for peering. (Optional)"
+  description = "AP-SOUTH-1 Region for peering. (Optional)"
 }
 
 variable "ap-northeast-2" {
@@ -71,7 +71,7 @@ variable "ap-northeast-2" {
     cidr_block = string
   })
   default = null
-  description = "US-WEST-2 Region for peering. (Optional)"
+  description = "AP-NORTHEAST-2 Region for peering. (Optional)"
 }
 
 variable "ap-southeast-1" {
@@ -81,7 +81,7 @@ variable "ap-southeast-1" {
     cidr_block = string
   })
   default = null
-  description = "US-WEST-2 Region for peering. (Optional)"
+  description = "AP-SOUTHEAST-1 Region for peering. (Optional)"
 }
 
 variable "ap-southeast-2" {
@@ -91,7 +91,7 @@ variable "ap-southeast-2" {
     cidr_block = string
   })
   default = null
-  description = "US-WEST-2 Region for peering. (Optional)"
+  description = "AP-SOUTHEAST-2 Region for peering. (Optional)"
 }
 
 variable "ap-northeast-1" {
@@ -101,7 +101,7 @@ variable "ap-northeast-1" {
     cidr_block = string
   })
   default = null
-  description = "US-WEST-2 Region for peering. (Optional)"
+  description = "AP-NORTHEAST-1 Region for peering. (Optional)"
 }
 
 variable "ca-central-1" {
@@ -111,7 +111,7 @@ variable "ca-central-1" {
     cidr_block = string
   })
   default = null
-  description = "US-WEST-2 Region for peering. (Optional)"
+  description = "CA-CENTRAL-1 Region for peering. (Optional)"
 }
 
 variable "eu-central-1" {
@@ -121,7 +121,7 @@ variable "eu-central-1" {
     cidr_block = string
   })
   default = null
-  description = "US-WEST-2 Region for peering. (Optional)"
+  description = "EU-CENTRAL-1 Region for peering. (Optional)"
 }
 
 variable "eu-west-1" {
@@ -131,7 +131,7 @@ variable "eu-west-1" {
     cidr_block = string
   })
   default = null
-  description = "US-WEST-2 Region for peering. (Optional)"
+  description = "EU-WEST-1 Region for peering. (Optional)"
 }
 
 variable "eu-west-2" {
@@ -141,7 +141,7 @@ variable "eu-west-2" {
     cidr_block = string
   })
   default = null
-  description = "US-WEST-2 Region for peering. (Optional)"
+  description = "EU-WEST-2 Region for peering. (Optional)"
 }
 
 variable "eu-west-3" {
@@ -151,7 +151,7 @@ variable "eu-west-3" {
     cidr_block = string
   })
   default = null
-  description = "US-WEST-2 Region for peering. (Optional)"
+  description = "EU-WEST-3 Region for peering. (Optional)"
 }
 
 variable "eu-north-1" {
@@ -161,7 +161,7 @@ variable "eu-north-1" {
     cidr_block = string
   })
   default = null
-  description = "US-WEST-2 Region for peering. (Optional)"
+  description = "EU-NORTH-1 Region for peering. (Optional)"
 }
 
 variable "me-south-1" {
@@ -171,7 +171,7 @@ variable "me-south-1" {
     cidr_block = string
   })
   default = null
-  description = "US-WEST-2 Region for peering. (Optional)"
+  description = "ME-SOUTH-1 Region for peering. (Optional)"
 }
 
 variable "sa-east-1" {
@@ -181,5 +181,5 @@ variable "sa-east-1" {
     cidr_block = string
   })
   default = null
-  description = "US-WEST-2 Region for peering. (Optional)"
+  description = "SA-EAST-1 Region for peering. (Optional)"
 }
